@@ -24,3 +24,6 @@ INSERT ALL
 into student (id, name) values (100, 'Foo')
 into student (id, name) values (300, 'Car')
 SELECT * FROM dual;
+
+-- This is a sample update query on the data in the database
+update student set name='Gautam' where name='Foo';
