@@ -39,5 +39,8 @@ alter table student drop(marks);
 -- Adding multiple columns to the table. 
 alter table student add(marks int, cgpa int);
 
+-- Renaming a column
+alter table student rename column  name to stu_name; 
+
 select * from student;
 
