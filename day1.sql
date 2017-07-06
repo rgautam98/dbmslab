@@ -25,5 +25,19 @@ into student (id, name) values (100, 'Foo')
 into student (id, name) values (300, 'Car')
 SELECT * FROM dual;
 
--- This is a sample update query on the data in the database
+-- This is a sample update query on the data in the database table
 update student set name='Gautam' where name='Foo';
+
+-- Time to alter the stuff in the database
+
+-- Adding columns
+alter table student add(marks int);
+
+-- deleting columns in the table
+alter table student drop(marks);
+
+-- Adding multiple columns to the table. 
+alter table student add(marks int, cgpa int);
+
+select * from student;
+
