@@ -40,5 +40,12 @@ alter table student add(marks int, cgpa int);
 -- Renaming a column
 alter table student rename column  name to stu_name; 
 
+-- Renaming the table
+alter table student rename to test;
+-- Lets take things to the old state
+alter table test rename to student;
+
+-- In case you are curious as to what databse you are using, works for oracle.
+SELECT * FROM PRODUCT_COMPONENT_VERSION;
 select * from student;
 
